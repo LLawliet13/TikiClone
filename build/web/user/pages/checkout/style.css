@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    /*background-color: white;*/
+    padding:0;
+}
+.checkout{
+    margin: 5% 15%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    font-family: 'roboto',sans-serif;
+
+}
+.checkout .selectBoard_parent{
+    width: 70%;
+
+}
+.checkout .selectBoard{
+    /*padding: 20px 30px;*/ 
+    /*border: 1px solid #c2c2c2;*/
+    border-radius: 5px;
+    margin-bottom: 5%;
+
+    /*margin-left: 5%;*/
+
+
+}
+.checkout .selectBoard div{
+    margin-bottom: 5%;
+}
+.checkout .option{
+    display: flex;
+    align-items: center;
+}
+.checkout .option input{
+    margin-right: 5px;
+}
+.checkout label{
+    display: flex;
+    align-items: center;
+}
+.checkout label span{
+    margin-left: 3px;
+}
+
+
+.checkout .deliver_type , .checkout .payment{
+    /*width:50%;*/
+    padding: 20px 30px; 
+    border: 1px solid #c2c2c2;
+    border-radius: 10px;
+}
+.checkout .title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.checkout .product_list .product_item{
+    display: flex;
+    border: 1px solid #c2c2c2;
+    align-items: center;
+    padding:2% 2%;
+    border-radius: 5px;
+    margin-bottom: 2%;
+    font-size:15px;
+    justify-content: space-around;
+    
+}
+.checkout .product_list .product_item div{
+    margin-bottom: 0;
+}
+.checkout .product_list .product_item .product_info,.checkout .product_list .product_item .product_deliverdetail{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-right: 50px;
+    width: 45%;
+}
+.checkout .name_quantity_price{
+    margin-left: 10px;
+}
+.checkout .quantity_price{
+    display: flex;
+    /*justify-content: space-between;*/
+    margin-top: 2px;
+}
+.checkout .quantity_price .quantity{
+    margin-right: 90px;
+}
+.checkout .product_list .product_item .product_deliverdetail{
+    justify-content: space-between;
+    margin-right: 0;
+}
+.checkout .product_list .product_item .product_deliverdetail div{
+    margin-right: 0;
+}
+
+.checkout .product_list .product_item .product_deliverdetail .delivery_info{
+    display: block;
+    width: 70%;
+    
+}
+.checkout .product_list .product_item img{
+    width:60px;
+}
+
+
+/*--------------------------------------- bảng detail--------------------------------*/
+.checkout .detailBoard{
+    /*không set width thì sticky mới hoạt động ??*/
+    position: sticky;
+    top:10px;
+}
+.checkout .detailBoard .addressboard,.checkout .detailBoard .voucher_discount,.checkout .detailBoard .cartDetail{
+    padding: 10px 20px; 
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+
+}.checkout .product_list_2{
+    padding: 5px 10px;
+    display: none;
+    border-bottom: 1px solid #c2c2c2;
+    
+}
+.checkout .top,.checkout .line,.checkout .product{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid #c2c2c2;
+    padding: 5px 0;
+}
+.checkout .top .left,.checkout  .line .left,.checkout .product .left{
+    margin-right: auto;
+}
+.checkout  .line{
+    border: 0;
+}
+
+.checkout .product .left{
+    font-size:10px;
+
+}
+.checkout .product .left div{
+    margin-top: 2px;
+}
+.checkout .product{
+    
+ border-bottom: 0;
+
+
+}
+
+.checkout .active{
+    display: block;
+   
+}
+.checkout .opendetail{
+    cursor: pointer;
+    font-size: 12px;
+    color: blue;
+}
+.checkout .voucher_discount .top{
+    border: 0;
+}
+.checkout  .voucher_discount .bottom .left a{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: blue;
+}
+.checkout .change{
+    border: 1px solid #c2c2c2;
+    padding: 5px 5px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 13px;
+    background: linear-gradient(rgb(255, 255, 255), rgb(247, 247, 247));
+}
+.checkout .confirm{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+    width: 50%;
+}
+.checkout .confirm input{
+    margin-right: 5px;
+}
+.checkout .btn{
+    padding: 10px 35px;
+    color:white;
+    background-color: #fc5858;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    border-radius: 5px;
+    font-size: 20px;
+}

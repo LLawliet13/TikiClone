@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    /* background-color:rgba(158, 158, 158, 0.2); */
+
+}
+.header li,.header a, .header button{
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size:16px;
+    color: aliceblue;
+    text-decoration: none;
+}
+.header button,.header input{
+    height: 40px;
+}
+
+
+.header{
+    display: flex;
+    justify-content: flex-end;
+    /* căn giữa chiều ngang */
+    align-items: center; 
+    /* căn giữa chiều dọc */
+    padding:0px 5%;
+    background-color: #1a94ff
+        ;
+
+}
+.header .left{
+    color: white;
+    width: 250px;
+
+}
+.header .left .bottom{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.header .logo{
+    display: block;
+    cursor: pointer;
+    margin: 2px ;
+    margin-bottom: 0px ;
+    margin-right: 140px;
+    /* margin với bên phải tăng đến max/ or min// trong trường hợp này là max */
+
+    height: 100px;
+    float:left;
+}
+.header .center{
+    display: flex;
+    justify-content: flex-end;
+    /* căn giữa chiều ngang */
+    align-items: center; 
+    /* căn giữa chiều dọc */
+
+    background-color:  #1a94ff;
+}
+
+/* ---------------------- nav link---------------------- */
+/* .nav_links{
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0 20px;
+
+}
+.nav_links li a{
+    transition: all  0.3s ease 0s;
+
+}
+.nav_links li a:hover{
+    color: aqua;
+
+} */
+/* ---------------------- nav link end---------------------- */
+.header button{
+    padding: 9px 25px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+    margin-left: 20px;
+}
+
+
+
+
+.header .search_input {
+    float:left;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-right: none;
+    padding: 20px 5px;
+    box-shadow: 0.1px 0.1px 2px  #000000;
+    width: 550px;
+
+    color: #9DBFAF;
+    font-size: 15px;
+    color: #000000;
+}
+.header .search_button{
+    background-color: #0d5cb6    ;
+    margin: 0;
+    margin-right:0px;
+    box-shadow: 0.1px 0.1px 2px  #000000;
+}
+/* button:hover{
+    background-color: aqua;
+} */
+.header #search_icon{
+    background-color: #0d5cb6;
+
+}
+.header .search{
+    position: relative;
+}
+
+.header .recommend{
+    position: absolute;
+    width: 550px;
+
+    color: gray;
+    z-index: 600;
+    background-color: white;
+}
+.header .recommend h4 a{
+    display: block;
+    background-color: #ffffff;
+    color: gray;
+    width: 100%;
+    padding: 10px 15px;
+    margin:0 !important;
+}
+.header .recommend h4 a:hover{
+    background-color: #d9d9d9;
+}
+
+/*
+ .header .search_input:focus ~ .recommend{
+    display: block;
+    
+}*/
+
+/*------------------------ drop down------------------------ */
+/* Dropdown Button */
+
+.header .user_dropdown {
+    background-color: #1a94ff;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    font-size: 18px;
+    font-weight: 550;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .user_dropdown .profile-icon{
+    display: inline-block;
+    width: 20px;
+    padding-bottom: 5px;
+    margin-right: 2px;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.header .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.header .dropdown-content {
+    display: none;
+    top: 40px;
+    position: absolute;
+    left: -20px;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.header .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.header .dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.header  .dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.header .dropdown:hover .dropbtn {background-color:  #0d5cb6;}
+/*------------------------ drop down------------------------ */
+
+
+.header .cart{
+    display: flex;
+    align-items: center;
+}
+.header button.shopping_cart{
+    background-color: #1a94ff;
+    font-size: 18px;
+    margin:0px 80px 0 0px;
+    padding: 0;
+}
+.header i.fa-shopping-cart{
+    
+    background-color: #1a94ff;
+    font-size: 20px;
+    margin: 0px 2px 5px 40px;
+    margin-bottom: 5px;
+    padding-bottom: 0px;
+    display: inline-block;
+    color: white;
+}
+.header i.fa-shopping-cart::before{
+    height: 0 !important;
+}
+
+.header .cart button{
+    position: relative;
+}
+
+.header .cart span{
+    background-color: white;
+    position: absolute;
+    padding: 0px 10px;
+    display: block;
+    color: black;
+    top:-15px;
+    right:-20px;
+    border-radius: 30%;
+
+}

@@ -1,0 +1,174 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 5, 2021, 9:27:28 PM
+    Author     : DELL
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.product_buy_detail {
+    font-family: "Roboto", sans-serif;
+    padding: 10px 20px;
+    display: flex;
+}
+.product_buy_detail .name {
+    font-size: 40px;
+    font-weight: lighter;
+}
+.product_buy_detail .fa-star {
+    font-size: 15px;
+    color: orange;
+}
+.product_buy_detail .numberOfProsSold {
+    font-size: 18px;
+    font-weight: lighter;
+}
+/* .product_buy_detail .seperate {
+    width: 1px;
+    height: 20px;
+   background-color: rgb(117, 117, 117); 
+    margin-left: 16px;
+    margin-right: 16px;
+} */
+.product_buy_detail .price {
+    margin: 20px 0;
+    font-size: 50px;
+    font-weight: lighter;
+    background-color: rgba(112, 112, 112, 0.075);
+    padding: 10px 10px;
+}
+.product_buy_detail .discount {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: lighter;
+}
+.product_buy_detail .address {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: lighter;
+}
+.product_buy_detail #changeAddress{
+    color: rgb(3, 132, 192);
+}
+.product_buy_detail label {
+    font-size: 18px;
+    display: block;
+    margin: 10px 0px  ;
+}
+.product_buy_detail .amount {
+    display: flex;
+}
+.product_buy_detail .amount .quantity {
+    /*    display: flex;
+        align-items: center;
+        justify-content: center;*/
+    width: 40px;
+    border: none;
+    outline: none;
+    text-align: center;
+    border: 1px solid black;
+    transition: 0.5s linear;
+}
+.product_buy_detail .amount .quantity:focus{
+    border: 1px solid blue;
+    box-shadow: 0.2px 0.2px 5px blue;
+}
+.product_buy_detail .choose {
+    display: flex;
+    align-items: center;
+}
+
+.product_buy_detail .buy {
+    margin: 20px 0;
+    font-size: 18px;
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(231, 79, 79);
+    color: white;
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+.product_buy_detail .buy:hover {
+    background-color: rgb(255, 123, 123);
+}
+
+.product_buy_detail .chat {
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(0, 174, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: rgb(0, 174, 255);
+    cursor: pointer;
+}
+.product_buy_detail .right{
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    border: 1px solid aqua;
+    border-radius: 10px;
+}
+.product_buy_detail .right .shopName{
+    padding: 10px 20px;
+}
+.product_buy_detail .right .shop_detail{
+    /* width: 400px; */
+    /* height: 300px; */
+    background-color: rgba(116, 116, 116, 0.062);
+    display: flex;
+    /* border-radius: 20px; */
+}
+.product_buy_detail .right .shopRate{
+    width: 50%;
+    /* height: 300px; */
+}
+.product_buy_detail .right .shopFollow{
+    width:50%;
+    /* height: 300px; */
+}
+.product_buy_detail .right .link{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+
+
+}
+.product_buy_detail .right .link img{
+    width: 25px;
+    margin-right: 5px;
+}
+.product_buy_detail .right .showShop,.product_buy_detail .right .follow{
+    border: 1px solid aqua;
+    padding:  10px 20px;
+    margin: 0 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.product_buy_detail .right .insurance{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+.product_buy_detail .right .insurance .iright{
+    margin-left: 20px;
+
+}

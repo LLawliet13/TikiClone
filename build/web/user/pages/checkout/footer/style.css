@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+footer{
+    background-color: #b5b5b5;
+    padding :20px 10%;
+    margin-top: 8%;
+}
+footer div{
+    margin-bottom: 10px;
+    
+}
+footer .rules{
+    display: flex;
+    justify-content: flex-start;
+}
+footer .rules a{
+    display: block;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+footer .rules a:hover{
+    text-decoration: underline;
+}

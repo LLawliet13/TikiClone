@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    margin:0;
+}
+
+body {
+    background-color: #f5f5fa;
+}
+
+.hot_topic_bar {
+    margin-top: 20px;
+    background-color: #f5f5fa;
+    position: sticky;
+    top: 0px;
+    z-index: 500;
+    padding: 0 10%;
+}
+.hot_topic_bar .top {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0px 0px;
+    font-family: 'Lato', sans-serif;
+}
+.hot_topic_bar .bottom {
+
+    display: flex;
+    padding: 0.5% 0;
+    justify-content: space-between;
+    
+}
+
+
+.hot_topic_bar .bottom .box{
+
+    font-family: 'Lato', sans-serif;
+    color: grey;
+    display: block;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    width: 24.5%;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.hot_topic_bar .bottom .box .icon{
+    height: 40px;
+    width: 100%;
+}
+.hot_topic_bar .bottom .box .icon img{
+    width: 40px;
+    height: 40px;
+
+
+}
+.hot_topic_bar .bottom .box p{
+    margin-top: 12px;
+    text-transform: capitalize;
+}
+.hot_topic_bar .bottom .active_hot_list_nav {
+    border: 0.2px #007bff solid;
+
+    color: #33AEFF;
+}
+
+

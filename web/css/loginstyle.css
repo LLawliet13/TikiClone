@@ -1,0 +1,49 @@
+body{
+    background-color:#7cbb5a;
+    font-family: "Roboto", sans-serif;
+}
+table{
+    background-color: #FFFFFF;
+    margin: 10% auto;
+    width: 30%;
+    padding:1em;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+tr{
+    display: block;
+    margin: 10% auto;
+    text-align: center;
+}
+#massage{
+    color: red;
+    font-family: cursive;
+    font-size: 14px;
+}
+td{
+    display: inline;
+}
+
+input{
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    /*margin: 0 0 15px;*/
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+#submit{
+    background-color: #4caf4f;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 10px;
+    cursor: pointer;
+}

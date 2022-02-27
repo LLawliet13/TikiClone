@@ -1,0 +1,45 @@
+
+h4{
+    font-size:20px;
+    margin-bottom: 5px;
+}
+.bill{
+    font-size:15px;
+    background-color: white;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+.bill .bar_bill ,.bill .bill_item{
+
+    display: flex;
+    padding: 10px 0;
+   
+    
+}
+.bill .bill_item div{
+    
+    display:flex;
+    align-items: center;
+}
+.bill .bill_list > .bill_item:not(:first-child){
+    border-top: 1px solid #b5b5b5;
+    
+    
+}
+.bill .bill_list > .bill_item:first-child{
+    border-top: 3px solid #d6d6d6;
+}
+.bill .bill_item div,.bill .bar_bill div{
+    width: 20%;
+    margin-right:5px;
+    height: 50px;
+}
+.bill .bill_item div.total,.bill .bar_bill div.total{
+    width: 10%;
+}
+
+.user-info h4{
+    margin-bottom: 10px;
+
+}

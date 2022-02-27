@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+*{
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+
+}
+body{
+    background-color: #f5f5fa; 
+}
+.bar_path{
+    margin-top: 3%;
+    padding:10px 10%;
+    display: flex;
+}
+.bar_path span{
+    margin-right: 20px;
+}
+.manager{
+    margin-top: 1%;
+    padding:10px 10%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-around
+
+}
+.manager .sidebar{
+    width: 20%;
+    margin-right: 20px;
+}
+.manager .content{
+    width: 80%;
+
+}
+.manager .card{
+    display:flex;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    cursor:pointer;
+    transition: 0.2 linear;
+    /*justify-content: center;*/
+}
+.manager .card a{
+    display: flex;
+    align-items: center;
+}
+.manager .card a svg{
+    margin-right:10px;
+}
+.manager .active-card {
+    background-color: #a3a3a3;
+}
+.manager .card:hover{
+    background-color: #a3a3a3;
+}
+

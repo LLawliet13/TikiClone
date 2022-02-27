@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+}
+footer{
+/*    position: absolute;
+    bottom: 0;*/
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: white;
+    /*flex-shrink: 0;*/
+    width: 100%
+
+
+}
+footer h1{
+    font-size: 20px;
+}
+
+footer a{
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+footer p{
+    color: rgb(128, 128, 137);
+
+}
+footer a:not(.phone){
+    display: block;
+    color: rgb(128, 128, 137); 
+}
+footer a.phone{
+    color: black;
+}
+footer a:hover{
+    text-decoration: underline;
+}

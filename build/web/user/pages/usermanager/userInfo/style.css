@@ -1,0 +1,130 @@
+
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    
+}
+.user-info{
+    font-size:15px;
+    background-color: white;
+    padding: 20px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.user-info h4{
+    margin-bottom: 10px;
+    
+}
+
+.user-info .basic-info,.user-info .info-table{
+    margin-right: auto;
+    min-width: 300px;
+    
+}
+/*---------- basic-info-------------*/
+
+
+.user-info .basic-info span{
+    display: inline-block;
+    width: 80px;
+    margin-right: 100px;
+}
+.user-info  form div input{
+  width:250px;
+  height: 35px;
+  border: 1px solid  #696969;
+  border-radius: 5px;
+  outline: 0;
+  padding: 2px 5px;
+  
+  
+    
+}
+.user-info  form div.csex{
+    display: flex;
+    align-items: center;
+}
+.user-info  form div.inner-csex span, .user-info  form div.inner-csex input{
+    margin-right:5px;
+}
+.user-info  form div.inner-csex span{
+    width: 50px;
+}
+.user-info  form div.inner-csex{
+    margin-bottom: 0;
+}
+.user-info  form div input[type='radio']{
+    width:10px;
+}
+.user-info .info-table div{
+    margin-bottom: 20px;
+}
+.user-info .btn input{
+    width: 100px;
+    background-color: #31b0eb;
+    color:white;
+    height: 40px;
+    border-radius:5px;
+    border: 0;
+    padding: 5px 10px;
+    cursor:pointer;
+    transition : 0.2s linear;
+    
+}
+.user-info .btn input:hover{
+    background-color: #12a1e3;
+}
+
+
+/*------------ contact info-----------------------*/
+.user-info .contact-info{
+    padding:5px 10px;
+    border-left: 1px solid  #b3b3b3;
+}
+.user-info .contact-table{
+    width:350px;
+    padding:10px 15px;
+}
+.contact-table .cphone, .email{
+display: flex;  
+justify-content: flex-end;
+margin-bottom: 20px;
+}
+.contact-table .left{
+    margin-right: auto;
+}
+.contact-table .right{
+    border: 1px solid #31b0eb;
+    border-radius:5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 3px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.2 linear;
+    color:#31b0eb;
+    
+}
+.contact-table .right:hover{
+    background-color: #31b0eb;
+    color: white;
+}
+
+.user-info .contact-table .title-inner{
+    display: flex;
+/*    justify-content: center;*/
+    align-items: center;
+}
+.user-info img{
+    width:20px;
+}
+.user-info .password{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding:10px;
+}

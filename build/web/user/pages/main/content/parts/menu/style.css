@@ -1,0 +1,123 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 28, 2021, 8:54:34 PM
+    Author     : DELL
+*/
+*{
+    margin: 0;
+}
+.menu{
+    padding:0 10%;
+    margin: 0;
+    background-color: #fff;
+    box-shadow: 0.1px 1px rgba(0, 0, 0, 0.2);
+}
+.menu .major-parent-box {
+    margin: 0;
+    width: 100%;
+    background-color: #fff;
+
+    overflow: hidden;
+    margin: 0px auto;
+
+    position: relative;
+    /*padding:0 10%;*/
+}
+
+.menu .parent-box {
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+.menu .siblings {
+    display:table-cell;
+    vertical-align:middle;
+    
+    float:left;
+
+}
+.menu .siblings span{
+    display: block;
+    color: #fff;
+
+padding: 10px 0%;
+    text-align: center;
+    display: block;
+    line-height: 20px;
+    transition: 0.2 linear;
+    width: 100%;
+    cursor: pointer;
+    
+}
+.menu .siblings span:hover {
+ box-shadow: 0.1px 0.1px  5px rgba(0, 0, 0, 0.2);
+}
+.menu .siblings span a {
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+   
+
+    /*  line-height: 0px;*/
+}
+
+/*.menu button {
+    display: block;
+    width: 100px;
+    height: 80px;
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid #1565c0;
+    border-radius: 4px;
+    color: #1565c0;
+    cursor: pointer;
+    font-size:24px;
+    font-family:arial;
+}*/
+
+.menu .move-right {
+    transform: translateX(-50%);
+    -webkit-transform:translateX(-50%);
+}
+.menu .prev, .menu .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;/*
+    */  width: auto;
+    margin-top: -28px;
+    padding: 16px;
+    /*color: transparent;*/
+    font-weight: lighter;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 99;
+}
+.menu .prev:hover, .menu .next:hover {
+    background-color: rgba(0,0,0,0.2);
+
+    color: gray;
+
+}
+/*.menu .visible{
+    display: block;
+    z-index: 99;
+}*/
+.menu .next {
+    right: 0;
+
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.menu .hide{
+    display: none;
+}

@@ -1,0 +1,126 @@
+/* kỹ thuật khung ngoài hẹp hơn khung trong và ẩn đi tùy chọn radius */
+*{
+    margin:0;
+    padding:0;
+}
+
+.slider_ads {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    
+}
+.slider_ads .hot_topic_ads img{
+    height: 300px;
+    width: 400px;
+}
+.slider_ads .section {
+    margin: 0;
+    padding: 0;
+/*    height: 100vh;*/
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.slider_ads .slider {
+    width: 800px;
+    height: 300px;
+    overflow: hidden;
+}
+.slider_ads .slide {
+    position: relative;
+    width: 300%;
+    height: 300px;
+    display: flex;
+}
+.slider_ads .slide input {
+    display: none;
+}
+.slider_ads .slide .st {
+    width: calc(100% / 3);
+    transition: 2s;
+}
+.slider_ads .slide .st img {
+    width: 800px;
+    height: 300px;
+}
+
+.slider_ads .slide .nav-auto {
+    position: absolute;
+    width: 800px;
+    bottom:30px;
+    display: flex;
+    justify-content: center;
+}
+
+.slider_ads .slide .nav-auto div:not(:last-child){
+    margin-right: 30px;
+   
+
+} 
+ .slider_ads  .nav-auto div{
+    /* border: 2px solid #6975e2; */
+    padding: 5px;
+    border-radius: 50%;
+    transition: 1s;
+
+
+}
+.slider_ads .slide .nav-auto div{
+    /* width: 5px;
+    height: 5px; */
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* z-index: 100; */
+}
+
+
+.slider_ads .nav-m{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    justify-content: center;
+    display: flex;
+}
+
+.slider_ads .nav-m .m-btn{
+    /* border: 2px  solid #0598ac; */
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+    /* position: relative; */
+}
+
+
+
+.slider_ads .nav-m .m-btn:not(:last-child){
+    margin-right: 30px;
+}
+.slider_ads .nav-m .m-btn:hover {
+    background-color: whitesmoke;
+}
+.slider_ads #radio1:checked ~ .nav-auto .one{
+    background-color: white;
+
+}
+.slider_ads #radio2:checked ~.nav-auto .two{
+    background-color: white;
+
+}
+.slider_ads #radio3:checked ~ .nav-auto .three{
+    background-color: white;
+
+}
+.slider_ads  #radio1:checked ~ .first {
+    margin-left: 0;
+}
+.slider_ads  #radio2:checked ~ .first {
+    margin-left: calc(-100%/3);
+}
+.slider_ads  #radio3:checked ~ .first {
+    margin-left: calc(-100%/3*2);
+}
+
